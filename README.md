@@ -177,7 +177,79 @@ int main() {
 	return 0; /* Program should never reach here */
 }
 ```
-**Q2. Explain the concept of Control Statement in c with an example**
+**Q2. Explain the concept of Control Statement in c with an example** <br/>
+Such statements by which we determine the flow of a program are called Control Statements or Decision control statements.
+ - If Statements 
+```
+if (condition) {
+    // Nested if else inside the body of "if"
+    if (condition2) {
+       // Statements inside the body of nested "if"
+    }
+    else {
+       // Statements inside the body of nested "else"
+    }
+}
+             else {
+    // Statements inside the body of "else"
+}
+```
+ - Loop Statements - (for, while, do-while)
+```
+for (initialization statement; condition)
+{
+// statements inside the loop
+}
+
+while (Condition)
+{
+Statements;
+}
+
+Do
+{
+// statements inside the loop
+}
+While (condition);
+```
+ - Switch Case Statements
+```
+Switch (expression)
+{
+Case label1:
+           Statement (S);
+           Break;
+Case label2:
+           Statement (S);
+           Break;
+Case label3;
+           Statement (s);
+           Break;
+….
+Case labelN:
+          Statement (s);
+           Break;
+Default:
+        Statement (s);
+}
+```
+ - Conditional Operator's Statements - Ternary operator (works like if-else)
+```
+// Syntax:
+Expression1? expression2: expression3;
+
+// If the condition of Expression1 is correct, then Expression2 runs, otherwise the Expression3 runs.
+```
+ - Goto Statements - It will make code flow jump directly to label-tag
+```
+// first label should be defined some-where (called label-tag)
+labelname:
+
+// then later in same function
+goto labelname;
+```
+
+Examples: <br/>
 
 **Q3. W.A. P. to enter obtained marks and total marks through the keyboard and then print if per is** <br/>
 **Precentage is greater than or equal to 60** <br/>
