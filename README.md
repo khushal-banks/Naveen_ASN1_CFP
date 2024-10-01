@@ -67,7 +67,7 @@ int main() {
 | double | 8 | 1.7E-308 to 1.7E+308 |
 | long double | 16 | 3.4E-4932 to 1.1E+4932 |
 
-**(d). what do you mean by logical operator.**
+**(d). what do you mean by logical operator.** <br/>
 Logical operators in C are used to combine multiple conditions/constraints. Logical Operators returns either 0 or 1, it depends on whether the expression result is true or false.
 - Logical AND ( && ) - returns true only if both operands are non-zero.
 - Logical OR ( || ) - returns true if any one of the operands is non-zero.
