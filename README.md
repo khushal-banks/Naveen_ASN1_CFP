@@ -1,4 +1,4 @@
-**Q1. Short Answer type question**
+**Q1. Short Answer type question** <br /><br />
 **(a). Explain with example printf () and scanf () function**
 
 ```
@@ -32,7 +32,7 @@ int main() {
 }
 ```
 
-**(b). which header file is used for exit ( ) function. **
+**(b). which header file is used for exit ( ) function.**
 
 ```
 #include <stdlib.h>
@@ -54,6 +54,10 @@ int main() {
 	exit(0);
 }
 ```
+
+**(c). Write all the data types with its range.**
+
+**(d). what do you mean by logical operator.**
 
 **(e). W.A.P. to make a calculator using switch case.**
 
@@ -124,9 +128,6 @@ int main() {
 	float result;
 	int valid;
 
-	/* Printing the question number [ Optional ] */
-	printf("Q1. e\n");
-
 	/* Infinite Loop: */
 	while (1) {
 		/* Reading user input */
@@ -148,5 +149,101 @@ int main() {
 	}
 
 	return 0; /* Program should never reach here */
+}
+```
+**Q2. Explain the concept of Control Statement in c with an example**
+
+**Q3. W.A. P. to enter obtained marks and total marks through the keyboard and then print if per is** <br/>
+**Precentage is greater than or equal to 60** <br/>
+**Percentage is greater than or equal to 50 but less than 60** <br/>
+**Percentage is greater than or equal to 40 but less than 50** <br/>
+**Percentage is less than 40** <br/>
+```
+#include <stdio.h>
+
+int main() {
+	/* Declare required variables */
+	int marks, total, percent;
+
+	/* Reading obtained marks */
+	printf("Please enter obtained marks: ");
+	scanf(" %d", &marks);
+
+	/* Reading total marks */
+	printf("Please enter total marks: ");
+	scanf(" %d", &total);
+
+	/* NOTE: 100 is multiplied to obtained marks first to make;
+	 * numerator larger than total marks */
+	percent = (100 * marks) / total;
+
+	if (percent >= 60) {
+		printf("Percentage is greater than or equal to 60\n");
+	} else if (percent >= 50) {
+		printf("Percentage is greater than or equal to 50 but less than 60\n");
+	} else if (percent >= 40) {
+		printf("Percentage is greater than or equal to 40 but less than 50\n");
+	} else {
+		printf("Percentage is less than 40\n");
+	}
+
+	return 0;
+}
+```
+
+**Q4. W.A.P. to enter a number and check this is even or odd.**
+```
+#include <stdio.h>
+
+int main() {
+	/* Declaring variable */
+	int number;
+
+	/* Reading a number */
+	printf("Please enter a number: ");
+	scanf(" %d", &number);
+
+	/* Checking if number leaves a remainder after dividing by 2 */
+	if (number % 2) {
+		printf("Number is Odd\n");
+	} else {
+		printf("Number is Even\n");
+	}
+
+	return 0;
+}
+```
+
+**Q5. W.A.P to Swapping of two numbers using third variable where number entered throughthe keyboard**
+```
+#include <stdio.h>
+
+int read_number() {
+	int number;
+	printf("Please enter a number: ");
+	scanf(" %d", &number);
+	return number;
+}
+
+int main() {
+	/* Declaring variable */
+	int a, b, temp;
+
+	/* Reading user input */
+	a = read_number();
+	b = read_number();
+
+	/* Printing number to check */
+	printf("a: %d, b: %d\n", a, b);
+
+	/* Swapping the numbers */
+	temp = a;
+	a = b;
+	b = temp;
+
+	/* Printing number to check */
+	printf("a: %d, b: %d\n", a, b);
+
+	return 0;
 }
 ```
