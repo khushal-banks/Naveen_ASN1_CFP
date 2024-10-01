@@ -62,13 +62,15 @@ int main() {
 | char | 1 | (-128 to 127) or (0 to 255) |
 | short int | 2 | (-32,768 to 32,767) or (0 to 65,535) |
 | int | 4 | (-2,147,483,648 to 2,147,483,647) or (0 to 4,294,967,295) |
-| long long int | 8 | (-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807) to (0 to 18,446,744,073,709,551,615) |
+| long long int | 8 | (-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807) or |
+| | | (0 to 18,446,744,073,709,551,615) |
 | float | 4 | 1.2E-38 to 3.4E+38 |
 | double | 8 | 1.7E-308 to 1.7E+308 |
 | long double | 16 | 3.4E-4932 to 1.1E+4932 |
 
 **(d). what do you mean by logical operator.** <br/>
-Logical operators in C are used to combine multiple conditions/constraints. Logical Operators returns either 0 or 1, it depends on whether the expression result is true or false.
+Logical operators in C are used to combine multiple conditions/constraints. <br/>
+Logical Operators returns either 0 or 1, it depends on whether the expression result is true or false.
 - Logical AND ( && ) - returns true only if both operands are non-zero.
 - Logical OR ( || ) - returns true if any one of the operands is non-zero.
 - Logical NOT ( ! ) - If the given operand is true then the logical NOT operator will make it false and vice-versa
@@ -238,7 +240,9 @@ Default:
 // Syntax:
 Expression1? expression2: expression3;
 
-// If the condition of Expression1 is correct, then Expression2 runs, otherwise the Expression3 runs.
+// If the condition of Expression1 is correct,
+// then Expression2 runs,
+// otherwise the Expression3 runs.
 ```
  - Goto Statements - It will make code flow jump directly to label-tag
 ```
